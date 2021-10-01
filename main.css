@@ -1,0 +1,56 @@
+
+  #demo{
+      text-align: center;
+  }
+  #frame1{border:3px solid black;border-radius: 20px;background-color: rgb(240,197,13);
+    height: 230px;width: 300px;padding: 20px;margin-left: 20px;margin-right: 20px;}
+  #innerdiv{border:2px solid gray;border-radius: 15px;
+    height: 180px;width: 250px;padding: 10px;background-color: rgb(242,213,84);}
+    #group1{padding: 10px;display: flex;position: relative;margin-top: 50px;}
+    #group2{padding: 10px;display: flex;position: relative;margin-bottom: 50px;}
+  #select-box{display: grid;padding-top: 8px;height: 30px;}
+  #shape{height: 180px;width: 240px;}
+  #mainbody{background-color: rgba(201, 194, 194, 0.658);}
+  
+  .button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  .button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #008fb3;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  .button:hover {
+    color: #fff;
+  }
+  .button:hover:before {
+    width: 100%;
+  }
